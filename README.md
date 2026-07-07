@@ -4,17 +4,43 @@ A modern, responsive e-commerce application built with **Next.js 16**, **React**
 
 ## Features
 
-- Product listing
-- Product details page
-- Search products by name
-- Filter products by category
-- Filter products by price range
-- Add products to cart
-- Update cart quantity
-- Remove products from cart
-- Display total cart price
-- Cart persistence using Local Storage
-- Responsive, mobile-first design
+### Product Listing
+
+- Displays products fetched from the DummyJSON API.
+- Responsive grid layout.
+- Optimized images using `next/image`.
+
+### Product Details
+
+- Dynamic product detail page.
+- Displays product image, description, category, rating, price, and stock.
+- Add to Cart functionality.
+- "View Cart" button appears when the product is already in the cart.
+
+### Search
+
+- Search products by title.
+- Instant filtering as the user types.
+
+### Filters
+
+- Filter by category.
+- Filter by maximum price.
+- Multiple filters work together.
+
+### Shopping Cart
+
+- Add multiple quantities of the same product.
+- Increase and decrease quantity.
+- Remove products.
+- Automatic total calculation.
+- Cart persists using Local Storage.
+
+### Responsive Design
+
+- Mobile-first layout.
+- Optimized for mobile, tablet, and desktop.
+
 - SEO-friendly pages using Next.js Metadata API
 - Optimized images using `next/image`
 
@@ -27,10 +53,17 @@ A modern, responsive e-commerce application built with **Next.js 16**, **React**
 - TypeScript
 - Tailwind CSS
 
-### State Management
+## State Management
 
-- React Context API
-- useReducer
+The application uses **React Context API** with **useReducer** for cart management.
+
+### Why Context API instead of Redux?
+
+- The application has a small and focused global state (shopping cart).
+- Context API keeps the project lightweight.
+- No additional dependencies are required.
+- `useReducer` provides predictable state updates similar to Redux.
+- Redux would be more appropriate for larger applications with complex global state shared across many features.
 
 ### Data Source
 
@@ -41,6 +74,27 @@ A modern, responsive e-commerce application built with **Next.js 16**, **React**
 - Next.js Image Optimization
 - Local Storage
 - ESLint
+
+## Architecture
+
+- Next.js App Router
+- Server Components for data fetching
+- Client Components for interactive UI
+- Context API + useReducer for state management
+- Service layer for API calls
+- Reusable UI components
+- TypeScript interfaces for type safety
+
+## Future Enhancements
+
+- Product sorting (Price: Low to High / High to Low)
+- Loading skeletons while fetching products
+- Toast notifications for cart actions
+- Wishlist
+- User authentication
+- Checkout and payment integration
+- Order history
+- Unit and integration testing
 
 ## Project Structure
 
@@ -64,7 +118,7 @@ src/
 
 ### Prerequisites
 
-- Node.js 22 or later
+- Node.js 22 or later exact version used (22.23.1)
 - npm 10 or later
 
 ### Installation
