@@ -72,7 +72,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/saurav-saksena/ecommerce-store.git
 ```
 
 Navigate to the project folder:
