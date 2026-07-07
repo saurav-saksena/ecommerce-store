@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-Commerce Store
+
+A modern, responsive e-commerce application built with **Next.js 16**, **React**, **TypeScript**, and **Tailwind CSS**. The application allows users to browse products, view product details, search and filter products, manage a shopping cart, and experience a responsive, SEO-friendly interface.
+
+## Features
+
+- Product listing
+- Product details page
+- Search products by name
+- Filter products by category
+- Filter products by price range
+- Add products to cart
+- Update cart quantity
+- Remove products from cart
+- Display total cart price
+- Cart persistence using Local Storage
+- Responsive, mobile-first design
+- SEO-friendly pages using Next.js Metadata API
+- Optimized images using `next/image`
+
+## Tech Stack
+
+### Frontend
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS
+
+### State Management
+
+- React Context API
+- useReducer
+
+### Data Source
+
+- DummyJSON API
+
+### Other
+
+- Next.js Image Optimization
+- Local Storage
+- ESLint
+
+## Project Structure
+
+```text
+src/
+├── app/
+├── components/
+│   ├── cart/
+│   ├── layout/
+│   ├── product/
+│   └── ui/
+├── constants/
+├── context/
+├── hooks/
+├── services/
+├── types/
+└── utils/
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 22 or later
+- npm 10 or later
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <repository-url>
+```
+
+Navigate to the project folder:
+
+```bash
+cd ecommerce-store
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser and visit:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Available Scripts
 
-## Learn More
+Start development server:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Create a production build:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+Start the production server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+## Performance & Best Practices
+
+- Server Components for data fetching
+- Client Components for interactive features
+- Responsive, mobile-first UI
+- Image optimization with `next/image`
+- Local Storage for persistent cart data
+- Reusable component architecture
+- Type-safe development using TypeScript
+
+## Future Enhancements
+
+- User authentication
+- Wishlist
+- Checkout and payment integration
+- Order history
+- Pagination
+- Product sorting
+- Backend integration
+- Unit and integration testing
+
+## Author
+
+**Kumar Saurav Saksena**
